@@ -1,0 +1,1 @@
+export const baseUrl = "https://dota-api.binray.io"
