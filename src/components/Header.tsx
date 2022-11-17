@@ -1,4 +1,5 @@
-import headerImage from './images/mateo-nCU4yq5xDEQ-unsplash.jpg'
+import headerImage from '../images/mateo-nCU4yq5xDEQ-unsplash.jpg'
+import {Link} from "react-router-dom";
 export const Header = () => {
     return (<header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-black">
@@ -17,10 +18,14 @@ export const Header = () => {
                 <div className="collapse navbar-collapse" id="navbarExample01">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item active">
-                            <a className="nav-link" aria-current="page" href="#">Dota Twitch</a>
+                            <Link className={'nav-link'} to={'/'}>Dota Twitch</Link>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">About</a>
+                            <Link className={'nav-link'} to={'/matches'}>Matches</Link>
+                        </li>
+
+                        <li className="nav-item">
+                            <Link className={'nav-link'} to={'/about'}>About</Link>
                         </li>
                     </ul>
                 </div>
