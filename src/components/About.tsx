@@ -5,7 +5,9 @@ export const About = () => {
     return (
         <React.Fragment>
             <Header/>
-            <h1>Show which heroes Dota streamers play currently</h1>
+            <div className={'app-about'}>
+                <h1>Show which heroes Dota streamers play currently</h1>
+            </div>
         </React.Fragment>
 
     )
