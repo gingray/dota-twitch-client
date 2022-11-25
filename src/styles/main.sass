@@ -4,8 +4,6 @@
   background-color: $body-bg
 
   .app-jumbotron
-    //@extend .bg-image
-    //background-image: url("../images/mateo-nCU4yq5xDEQ-unsplash.jpg")
     background-image: url("../images/jeff-hardi-yRAK7Vcyl_Q-unsplash.jpg")
     background-size: 100% auto
     background-position: center
@@ -18,6 +16,21 @@
   .header-image
     @extend .img-fluid
 
+.matches-container
+  @extend .row
+  @extend .mt-5
+
+  h2
+    @extend .text-center
+    color: white
+
+  .fetch-matches, .show-matches
+    @extend .col-lg-6
+
+.app-about
+  h1
+    @extend .text-center
+    color: white
 
 .streamer-cell
   @extend .col-lg-4
@@ -39,3 +52,33 @@
     @extend .text-center
     font-size: 2rem
     color: white
+
+
+.list-matches-container
+  @extend .p-3
+  background-color: white
+  .match-list-item:nth-of-type(odd)
+    background-color: #e0e0e0
+  .match-list-item:nth-of-type(even)
+    //background-color: #e0e0e0
+
+
+.match-list-item
+  @extend .mb-3
+  @extend .p-2
+  @extend .row
+
+  .list-item-id
+    @extend .d-flex
+    @extend .justify-content-center
+    @extend .align-items-center
+    @extend .col-lg-2
+
+  .match-side
+    @extend .col-lg-4
+
+    &.victory
+      border-left: 2rem green solid
+
+    &.defeat
+      border-left: 2rem brown solid
