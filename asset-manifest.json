@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dota-twitch-client/static/css/main.20305929.css",
-    "main.js": "/dota-twitch-client/static/js/main.403e6e26.js",
+    "main.css": "/dota-twitch-client/static/css/main.960d2cdd.css",
+    "main.js": "/dota-twitch-client/static/js/main.9c758cd7.js",
     "static/js/787.55a87e62.chunk.js": "/dota-twitch-client/static/js/787.55a87e62.chunk.js",
     "static/media/jeff-hardi-yRAK7Vcyl_Q-unsplash.jpg": "/dota-twitch-client/static/media/jeff-hardi-yRAK7Vcyl_Q-unsplash.dc1068770032faa40a13.jpg",
     "index.html": "/dota-twitch-client/index.html",
-    "main.20305929.css.map": "/dota-twitch-client/static/css/main.20305929.css.map",
-    "main.403e6e26.js.map": "/dota-twitch-client/static/js/main.403e6e26.js.map",
+    "main.960d2cdd.css.map": "/dota-twitch-client/static/css/main.960d2cdd.css.map",
+    "main.9c758cd7.js.map": "/dota-twitch-client/static/js/main.9c758cd7.js.map",
     "787.55a87e62.chunk.js.map": "/dota-twitch-client/static/js/787.55a87e62.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20305929.css",
-    "static/js/main.403e6e26.js"
+    "static/css/main.960d2cdd.css",
+    "static/js/main.9c758cd7.js"
   ]
 }
