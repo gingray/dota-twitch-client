@@ -3,15 +3,13 @@ import {Typeahead} from "react-bootstrap-typeahead";
 import axios from "axios";
 import {baseUrl} from "../conts";
 import {useMutation, useQuery} from "@tanstack/react-query";
-import {stat} from "fs";
-
-const fetchMatches = (heroId: number) => {
-    return axios.get(`${baseUrl}/api/matches`, { params: {hero_id: heroId}})
-        .then((res) => res.data)
-}
+import {GetMatches, GetMatchesQueryKey} from "../queries/GetMatches";
 
 export const ShowMatches = ({data}:{data:any}) => {
-    const mutation = useMutation(fetchMatches)
+    const {refetch} = useQuery([GetMatchesQueryKey], () => {
+        const params = {hero_id: state.heroId}
+        return GetMatches({params})
+    }, {enabled: false, refetchOnWindowFocus: false})
 
     const [state, setState] = useState({
         heroId: 0,
@@ -40,7 +38,7 @@ export const ShowMatches = ({data}:{data:any}) => {
 
                 <div className={'mb-3 d-grid'}>
                     <button className={'btn btn-success'} type={'submit'} onClick={(event) => {
-                        mutation.mutate(state.heroId)
+                        refetch()
                         event.preventDefault()
                     }}>Show</button>
                 </div>

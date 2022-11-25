@@ -5,6 +5,7 @@ import {useQuery} from "@tanstack/react-query";
 import {baseUrl} from "../conts";
 import axios from "axios";
 import React from "react";
+import {ListMatches} from "./ListMatches";
 
 export const Matches = () => {
 
@@ -31,6 +32,9 @@ export const Matches = () => {
                     <div className={'show-matches'}>
                         <ShowMatches data={data}/>
                     </div>
+                </div>
+                <div className={'list-matches-container'}>
+                    <ListMatches></ListMatches>
                 </div>
             </div>
         </>

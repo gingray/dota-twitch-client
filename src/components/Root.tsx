@@ -20,7 +20,7 @@ export const Root = () => {
 
     if (error) return <div className={"error"}>An error has occurred: </div>;
     // console.log(data)
-    const streamers  = data.map((item: any) => <Streamer streamerEvent={item} />)
+    const streamers  = data.map((item: any) => <Streamer key={item.ID} streamerEvent={item} />)
     const parts = chunk(streamers, 3).map((group, idx) => <div className={"row"} key={idx}>{group as any}</div>)
 
     return (
