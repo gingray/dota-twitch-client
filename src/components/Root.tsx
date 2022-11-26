@@ -7,7 +7,7 @@ import React from "react";
 import {Header} from "./Header";
 
 export const Root = () => {
-    const { isLoading, error, data, isFetching } = useQuery([], () => {
+    const { isLoading, error, data, isFetching } = useQuery(['StreamersPayload'], () => {
         const url = `${baseUrl}/api/events`
         return axios
             .get(url)

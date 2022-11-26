@@ -3,7 +3,7 @@ import {baseUrl} from "./conts";
 
 export const Streamer = ({streamerEvent}:{streamerEvent: StreamerEvent}) => {
     const imagePath = `${baseUrl}/static/${streamerEvent.ImagePath}`
-    return (<div className={"streamer-cell"} key={streamerEvent.ID}>
+    return (<div className={"streamer-cell"}>
         <div className={'streamer-image'}>
             <img src={imagePath}/>
         </div>

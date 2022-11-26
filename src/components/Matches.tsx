@@ -9,7 +9,7 @@ import {ListMatches} from "./ListMatches";
 
 export const Matches = () => {
 
-    const { isLoading, error, data, isFetching } = useQuery([], () => {
+    const { isLoading, error, data, isFetching } = useQuery(['HeroesQuery'], () => {
         const url = `${baseUrl}/api/heroes`
         return axios
             .get(url)
