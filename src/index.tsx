@@ -4,7 +4,7 @@ import './index.sass';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {QueryClient, QueryClientProvider} from "@tanstack/react-query";
-import { BrowserRouter } from 'react-router-dom';
+import {BrowserRouter, HashRouter} from 'react-router-dom';
 
 const queryClient = new QueryClient();
 
@@ -13,11 +13,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <React.StrictMode>
-        <BrowserRouter>
+        <HashRouter>
             <QueryClientProvider client={queryClient}>
                 <App/>
             </QueryClientProvider>
-        </BrowserRouter>
+        </HashRouter>
     </React.StrictMode>
 );
 
