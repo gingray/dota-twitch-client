@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/dota-twitch-client/static/css/main.960d2cdd.css",
-    "main.js": "/dota-twitch-client/static/js/main.576ae15f.js",
+    "main.js": "/dota-twitch-client/static/js/main.5f3ae6e6.js",
     "static/js/787.55a87e62.chunk.js": "/dota-twitch-client/static/js/787.55a87e62.chunk.js",
     "static/media/jeff-hardi-yRAK7Vcyl_Q-unsplash.jpg": "/dota-twitch-client/static/media/jeff-hardi-yRAK7Vcyl_Q-unsplash.dc1068770032faa40a13.jpg",
     "index.html": "/dota-twitch-client/index.html",
     "main.960d2cdd.css.map": "/dota-twitch-client/static/css/main.960d2cdd.css.map",
-    "main.576ae15f.js.map": "/dota-twitch-client/static/js/main.576ae15f.js.map",
+    "main.5f3ae6e6.js.map": "/dota-twitch-client/static/js/main.5f3ae6e6.js.map",
     "787.55a87e62.chunk.js.map": "/dota-twitch-client/static/js/787.55a87e62.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.960d2cdd.css",
-    "static/js/main.576ae15f.js"
+    "static/js/main.5f3ae6e6.js"
   ]
 }
