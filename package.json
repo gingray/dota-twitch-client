@@ -2,7 +2,7 @@
   "name": "dota-twitch-insights",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gingray.github.io/dota-twitch-client",
+  "homepage": "https://dota2show.com/",
   "dependencies": {
     "@tanstack/react-query": "^4.16.1",
     "@testing-library/jest-dom": "^5.16.5",
@@ -19,6 +19,7 @@
     "react-bootstrap": "^2.6.0",
     "react-bootstrap-typeahead": "^6.0.0",
     "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "sass": "^1.56.1",
@@ -30,7 +31,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build",
+    "predeploy": "npm run build && cp CNAME ./build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {

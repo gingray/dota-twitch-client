@@ -19,7 +19,7 @@ export const Root = () => {
     if (isLoading) return <div>Loading...</div>;
 
     if (error) return <div className={"error"}>An error has occurred: </div>;
-    // console.log(data)
+    console.log("hello from custom domain")
     const streamers  = data.map((item: any) => <Streamer key={item.ID} streamerEvent={item} />)
     const parts = chunk(streamers, 3).map((group, idx) => <div className={"row"} key={idx}>{group as any}</div>)
 
