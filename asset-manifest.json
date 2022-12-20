@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.9b4a8589.css",
-    "main.js": "/static/js/main.71e82870.js",
+    "main.js": "/static/js/main.8239f584.js",
     "static/js/787.55a87e62.chunk.js": "/static/js/787.55a87e62.chunk.js",
     "static/media/jeff-hardi-yRAK7Vcyl_Q-unsplash.jpg": "/static/media/jeff-hardi-yRAK7Vcyl_Q-unsplash.dc1068770032faa40a13.jpg",
     "index.html": "/index.html",
     "main.9b4a8589.css.map": "/static/css/main.9b4a8589.css.map",
-    "main.71e82870.js.map": "/static/js/main.71e82870.js.map",
+    "main.8239f584.js.map": "/static/js/main.8239f584.js.map",
     "787.55a87e62.chunk.js.map": "/static/js/787.55a87e62.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9b4a8589.css",
-    "static/js/main.71e82870.js"
+    "static/js/main.8239f584.js"
   ]
 }
