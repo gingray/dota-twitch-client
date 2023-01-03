@@ -20,9 +20,9 @@ export const Header = () => {
                         <li className="nav-item active">
                             <Link className={'nav-link'} to={'/'}>Dota Twitch</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className={'nav-link'} to={'/matches'}>Matches</Link>
-                        </li>
+                        {/*<li className="nav-item">*/}
+                        {/*    <Link className={'nav-link'} to={'/matches'}>Matches</Link>*/}
+                        {/*</li>*/}
 
                         <li className="nav-item">
                             <Link className={'nav-link'} to={'/about'}>About</Link>
