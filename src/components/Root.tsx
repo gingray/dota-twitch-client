@@ -5,6 +5,7 @@ import {Streamer} from "../streamer";
 import {chunk} from "../utils";
 import React from "react";
 import {Header} from "./Header";
+import {Helmet} from "react-helmet";
 
 export const Root = () => {
     const { isLoading, error, data, isFetching } = useQuery(['StreamersPayload'], () => {
@@ -19,12 +20,16 @@ export const Root = () => {
     if (isLoading) return <div>Loading...</div>;
 
     if (error) return <div className={"error"}>An error has occurred: </div>;
-    console.log("hello from custom domain")
     const streamers  = data.map((item: any) => <Streamer key={item.ID} streamerEvent={item} />)
     const parts = chunk(streamers, 3).map((group, idx) => <div className={"row"} key={idx}>{group as any}</div>)
 
     return (
         <React.Fragment>
+            <Helmet>
+                <title>Dota 2 Show | Show Streamers</title>e
+                <meta name={"description"} content={"Show online streamers | twitch streamers"}/>
+                <meta name={"keywords"} content={"Dota 2, Streamers, Players Online"}/>
+            </Helmet>
             <Header/>
             <div className={'app-container'}>
                 {parts}

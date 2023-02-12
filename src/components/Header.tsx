@@ -32,7 +32,9 @@ export const Header = () => {
             </div>
         </nav>
         <div className="jumbotron-container">
-            <div className={'app-jumbotron'}/>
+            <div className={'app-jumbotron'}>
+                <h1>Streamers Online</h1>
+            </div>
         </div>
     </header>)
 }

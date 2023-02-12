@@ -5,7 +5,7 @@ export const Streamer = ({streamerEvent}:{streamerEvent: StreamerEvent}) => {
     const imagePath = `${baseUrl}/static/${streamerEvent.ImagePath}`
     return (<div className={"streamer-cell"}>
         <div className={'streamer-image'}>
-            <img src={imagePath}/>
+            <img alt={`Streamer Name: ${streamerEvent.Streamer.Login}`} src={imagePath}/>
         </div>
 
         <div className={'streamer-url'}>

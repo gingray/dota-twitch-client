@@ -4,11 +4,17 @@
   background-color: $body-bg
 
   .app-jumbotron
+    @extend .d-flex
+    @extend .justify-content-center
+    @extend .align-items-center
     background-image: url("../images/jeff-hardi-yRAK7Vcyl_Q-unsplash.jpg")
     background-size: 100% auto
     background-position: center
     background-repeat: no-repeat
     height: 500px
+  h1
+    color: white
+    font-size: 6rem
 
 .app-container
   @extend .container

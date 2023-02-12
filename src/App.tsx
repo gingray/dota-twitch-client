@@ -5,9 +5,6 @@ import {Root} from "./components/Root";
 import {About} from "./components/About";
 import {Matches} from "./components/Matches";
 import { useLocation } from "react-router-dom";
-// import ReactGA from 'react-ga4';
-// const TRACKING_ID = "G-H9H3R79G40";
-// ReactGA.initialize(TRACKING_ID, {testMode: true});
 function App() {
     const location = useLocation()
     useEffect(() => {
