@@ -5,6 +5,7 @@ import {Root} from "./components/Root";
 import {About} from "./components/About";
 import {Matches} from "./components/Matches";
 import { useLocation } from "react-router-dom";
+import {MMRTable} from "./components/MMRTable";
 function App() {
     const location = useLocation()
     useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={ <Root/> } />
           <Route path="/about" element={ <About/> } />
           <Route path="/matches" element={ <Matches/> } />
+          <Route path="/mmrs" element={ <MMRTable/> } />
       </Routes>
   );
 }

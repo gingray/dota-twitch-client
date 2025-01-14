@@ -23,7 +23,9 @@ export const Header = () => {
                         {/*<li className="nav-item">*/}
                         {/*    <Link className={'nav-link'} to={'/matches'}>Matches</Link>*/}
                         {/*</li>*/}
-
+                        <li className="nav-item">
+                            <Link className={'nav-link'} to={'/mmrs'}>MRR Table</Link>
+                        </li>
                         <li className="nav-item">
                             <Link className={'nav-link'} to={'/about'}>About</Link>
                         </li>
