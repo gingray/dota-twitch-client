@@ -6,6 +6,8 @@ import {About} from "./components/About";
 import {Matches} from "./components/Matches";
 import { useLocation } from "react-router-dom";
 import {MMRTable} from "./components/MMRTable";
+import {Stream} from "./components/Stream";
+
 function App() {
     const location = useLocation()
     useEffect(() => {
@@ -23,6 +25,7 @@ function App() {
           <Route path="/about" element={ <About/> } />
           <Route path="/matches" element={ <Matches/> } />
           <Route path="/mmrs" element={ <MMRTable/> } />
+          <Route path="/stream" element={ <Stream/> } />
       </Routes>
   );
 }

@@ -37,6 +37,9 @@
   h1
     @extend .text-center
     color: white
+.app-streamer
+  @extend .text-center
+  color: white
 
 .streamer-cell
   @extend .col-lg-4
@@ -97,7 +100,13 @@
       border-bottom: 5px solid orange
 
 .mmr-table
-  @extend .d-flex
-  @extend .justify-content-center
-  @extend .align-items-center
+  @extend .row
+  @extend .offset-lg-4
+  //@extend .d-flex
+  //@extend .justify-content-center
+  //@extend .align-items-center
   color: white
+  .column
+    @extend .col-lg-4
+    @extend .mt-3
+
