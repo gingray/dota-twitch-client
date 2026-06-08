@@ -27,12 +27,11 @@ export const Header = () => {
                             <Link className={'nav-link'} to={'/mmrs'}>MRR Table</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className={'nav-link'} to={'/about'}>About</Link>
-                        </li>
-                        <li className="nav-item">
                             <Link className={'nav-link'} to={'/stream'}>Stream</Link>
                         </li>
-
+                        <li className="nav-item">
+                            <Link className={'nav-link'} to={'/about'}>About</Link>
+                        </li>
                     </ul>
                 </div>
             </div>
