@@ -23,11 +23,10 @@ export const Stream = () => {
             <Header/>
             <div className={'app-streamer'}>
                 <div className={'container'}>
-                    <h1>Stream</h1>
+                    <h1>https://twitch.tv/g1ngray</h1>
                     <div>
-                        <span>https://twitch.tv/g1ngray</span>
-                        <div>
-                            <button className={"btn btn-primary btn-block"} onClick={clickStreamer}>{btnText}</button>
+                        <div className={"mt-5"}>
+                            <button className={"btn btn-primary w-100 w-md-auto"} onClick={clickStreamer}>{btnText}</button>
                         </div>
                     </div>
                 </div>
